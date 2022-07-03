@@ -1,0 +1,76 @@
+
+main {
+    width: 100%;
+    padding: 125px 10px 50px;
+}
+
+main h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--prygreen);
+    margin: 20px 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+main form {
+    width: 50%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondarygreen);
+    margin: 10px 0px 0px;
+}
+
+input, textarea {
+    margin: 10px 0px;
+    padding: 15px;
+    /* border: none; */
+    /* color: var(); */
+    border: 1px solid var(--prygreen);
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Inter' , sans-serif;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: rgb(221, 198, 198);
+}
+
+textarea {
+    margin: 10px 0px;
+    resize: none;
+    outline: none;
+    padding: 15px;
+}
+
+input[type=submit] {
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    background-color: var(--secondarygreen);
+    color: white;
+    padding: 15px 50px;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 750px) {
+
+    main form {
+        width: 70%;
+    }
+
+    input[type=submit] {
+        padding: 15px 30px;
+    }
+}
