@@ -232,3 +232,9 @@ footer {
     height: 30px;
     transition: 0.5s;
 }
+
+@media (max-width: 500px) {
+    .grid-wrapper .wide, .grid-wrapper .tall, .grid-wrapper .taller, .grid-wrapper .big {
+        grid-column: 1 / -1;
+    }
+}
