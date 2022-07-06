@@ -12,8 +12,9 @@ a {
 .hero-wrapper {
     position: relative;
 	display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    gap: 25px;
     align-items: center;
     padding: 25px 0px;
     z-index: 1;
@@ -24,8 +25,13 @@ a {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-
+    /* transform: scaleX(-1); */
 }
+
+/* .profile-image:hover {
+    -webkit-animation: heartbeat 2s ease-in-out infinite both;
+	        animation: heartbeat 2s ease-in-out infinite both;
+} */
 
   .heartbeat {
 	-webkit-animation: heartbeat 2s ease-in-out infinite both;
@@ -113,7 +119,11 @@ a {
     }
   }
   
-
+ 
+.hero-wrapper div {
+    width: fit-content;
+    width: 50%;
+}
 
 .hero-wrapper h2, .hero-wrapper p {
     color: white;
@@ -128,7 +138,8 @@ a {
 .hero-wrapper p {
     margin-bottom: 15px;
 	line-height: 35px;
-    width: 40%;
+    width: 80%;
+    margin: 0px auto 15px;
 }
 
 .hero-media-wrapper svg {
@@ -163,6 +174,7 @@ main h2 {
     margin: 20px 0px;
     text-align: center;
     text-transform: capitalize;
+    width: 100%;
 }
 
 .hobby-priority-wrapper {
@@ -299,6 +311,13 @@ li::marker {
 
 
 @media (max-width: 768px) {
+    .hero-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .hero-wrapper div {
+        width: 80%;
+    }
     .hero-wrapper p {
         width: 70%;
     }

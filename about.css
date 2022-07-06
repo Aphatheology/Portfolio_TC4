@@ -5,11 +5,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-color: black;
 }
 
 main > div {
     /* flex: 1; */
     align-self: stretch;
+    
 }
 
 main > div:first-of-type {
@@ -39,6 +41,7 @@ main div h2 {
     padding-left: 20px;
     line-height: 1.5;
     font-size: 40px;
+    text-align: left;
 }
 
 main div p, main div h3 {
@@ -88,6 +91,7 @@ main button a {
 
     main div h2 {
         padding-left: 0px;
+        text-align: center;
     }
 
     main div p, main div h3 {
