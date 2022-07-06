@@ -16,16 +16,7 @@ html, body {
 	height: 100%;
 	width: 100%;
     min-height: 100vh;
-}
-
-body {
-    height: 100%;
-    /* min-height: 100vh; */
-    background-image: url('https://images.unsplash.com/photo-1647709264510-d28cd24a24c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    background-color: black;
+    background: linear-gradient(45deg, #190f2c, #200b30);
 }
 
 header {
@@ -52,8 +43,6 @@ header {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    /* padding: 5px 14px; */
-    /* border: 1px solid red; */
 }
 
 .logo {
@@ -80,7 +69,7 @@ header {
 }
 
 .menu li {
-    /* padding: 5px 14px; */
+    padding: 5px 14px;
     list-style: none;
     border: 2px solid var(--pryblack);
 }
@@ -192,4 +181,64 @@ footer {
     .hamburger {
      display: block;
     }
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+div img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 125px 10px;
+}
+
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.hero-media-wrapper svg {
+    fill: var(--prygreen);
+    margin: 0px 10px;
+    border: 1px solid var(--prygreen);
+    border-radius: 50%;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
 }
